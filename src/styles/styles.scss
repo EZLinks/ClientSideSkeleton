@@ -1,0 +1,263 @@
+@import "./page";
+@import "./variables";
+@import "./buttons";
+
+input, button, a, i {
+  outline: none !important;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+#toast-container {
+  -webkit-filter: none!important; 
+  filter: none!important;   
+}
+
+// TO DO: MOVE THIS TO UI GRID STYLESHEET
+// hides the items per page span since we've always set to be 10 shown
+span.ui-grid-pager-row-count-label {
+  display: none;
+}
+.ui-grid-pager-panel {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: auto;
+}
+
+div.ui-grid-pager-panel {
+    background: RGBA(211, 211, 211, 1.00); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(RGBA(245, 245, 245, 1.00), RGBA(211, 211, 211, 1.00)); /* For Safari */
+    background: -o-linear-gradient(RGBA(245, 245, 245, 1.00), RGBA(211, 211, 211, 1.00)); /* For Opera  */
+    background: -moz-linear-gradient(RGBA(245, 245, 245, 1.00), RGBA(211, 211, 211, 1.00)); /* For Firefox */
+    background: linear-gradient(RGBA(245, 245, 245, 1.00), RGBA(211, 211, 211, 1.00)); /* Standard syntax */
+    border-top: 1px solid RGBA(211, 211, 211, 1.00);
+    border-bottom: 1px solid RGBA(211, 211, 211, 1.00);
+    -webkit-appearance: none;
+}
+
+.ui-grid-pager-count {
+  abbr[title="through"] {
+    text-decoration: none !important;
+  }
+}
+
+/* UI Grid Adjustments */
+.ui-grid-cell-contents {
+    cursor: default;
+}
+    
+.ui-grid-cell-focus, .ui-grid-cell-focus> span * {
+        background-color:#66856F;
+        color: #eee;
+        cursor: default !important;
+    }
+
+span.ui-grid-pager-row-count-label {
+    position: relative;
+    vertical-align: middle !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1px;
+}
+
+.ui-grid-pager-max-pages-number,
+.ui-grid-sort-priority-number {
+    display: none !important;
+}
+
+button[role="menuitem"] > div {
+    display: block !important;
+    height: 0 auto !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+}
+
+input.ui-grid-pager-control-input::-webkit-inner-spin-button, 
+input.ui-grid-pager-control-input::-webkit-outer-spin-button { 
+  margin: 0; 
+}
+
+input.ui-grid-pager-control-input {
+    text-align: center !important;
+    vertical-align: middle !important;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+
+.ui-grid-pager-control input[type=number] {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    cursor: not-allowed;
+    font-size: 1rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+
+.ui.grid.center.aligned {
+    margin: auto !important;
+}
+
+
+.ui-grid-canvas {
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ui-grid-pager-row-count-picker select {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    min-width: 18px;
+    width: auto;
+    min-height:  27px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    font-size: 0.9rem;
+    font-family: Lato, Helvetica-Neue, Helvetica, sans-serif;
+}
+
+.ui-grid-cell-contents {
+    font-family: Lato, Helvetica-Neue, Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.ui-grid-pager-control input[type=number] {
+   padding-right: 0 !important;
+   text-align: center !important;
+}
+
+.ui-grid-row.ui-grid-row-selected>[ui-grid-row]>.ui-grid-cell {
+    background-color: RGBA(99, 139, 164, 1.00);
+    color: #fff;
+}
+.ui-grid-row:last-of-type {
+    box-shadow: 0 1px 1px 0px rgba(0,0,0,0.05);
+}
+
+////////////////// END UI GRID STUFF
+
+form {
+  .isRequired.field {
+    input {
+        box-shadow: 0 0 1px 1px blue;
+  .action.input {
+    max-height: 40px !important;
+  }
+    }
+  }
+}
+
+span.input-subtext {
+  display: flex;
+  font-size: 12px !important;
+  margin: auto;
+  position: relative;
+  font-style: italic;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding-right: 12px;
+  font-weight: thin;
+  .tiny.asterisk.icon {
+    display: inline-block;
+    position: relative;
+    margin: 0 2px !important;
+    bottom: 2px;
+  }
+}
+
+.noPaddingTop, .noTopPadding {
+  padding-top: 0 !important;
+}
+
+i.icon:hover {
+  background-color: transparent;
+}
+
+validation-summary {
+  margin-top: 15px;
+  display: block;
+  li {
+      font-size: 0.91rem;
+  }
+}
+
+    .ui.list .item.selected {
+      background-color: RGBA(99, 139, 164, 1.00)!important;
+    }
+
+    .ui.list .item.selected .description {
+      color: #fff!important;
+    }
+
+    .ui.list .item .description {
+      padding: 5px!important;
+    }
+
+    .padding10 {
+      padding: 10px!important;
+    }
+
+    .margin-t10 {
+      margin-top: 10px!important;      
+    }
+    
+    .margin-t20 {
+      margin-top: 20px!important;      
+    }
+
+    .padding-l10 {
+      padding-left: 10px!important;      
+    }
+
+    .dblock {
+      display: block!important;
+    }
+
+/*
+    Tiny Modal Width
+    https://github.com/Semantic-Org/Semantic-UI/issues/240
+*/
+@media all and (max-width: 767px) {
+  .ui.tiny.modal {
+      width: 95%;
+      margin: 0em 0em 0em -47.5%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .ui.tiny.modal {
+      width: 50%;
+      margin: 0em 0em 0em -25%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .ui.tiny.modal {
+      width: 200px;
+      margin: 0em 0em 0em -100px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .ui.tiny.modal {
+      width: 300px;
+      margin: 0em 0em 0em -150px;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .ui.tiny.modal {
+      width: 400px;
+      margin: 0em 0em 0em -200px;
+  }
+}

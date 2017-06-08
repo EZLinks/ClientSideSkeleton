@@ -1,0 +1,8 @@
+node_modules
+dist
+reports
+tslint-reports
+typings
+out
+typings
+.idea/

@@ -1,0 +1,16 @@
+// Global Button styles and custom adjustments
+/// Component specific button styles go in their specific component stylesheet
+button, input {
+	outline: none !important;
+	&:focus,&::selection {
+		outline: none;
+	}
+}
+.button {
+	&::selection {
+		box-shadow: 0 !important;
+	}
+}
+.ui.primary.basic.button.save-button {
+	width: 100%;
+}

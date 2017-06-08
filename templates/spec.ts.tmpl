@@ -1,0 +1,32 @@
+import * as angular from 'angular';
+import 'angular-mocks';
+
+import 'modules/<%= moduleCap %>/<%= moduleCap %>';
+
+import './<%= name %>.ts';
+import {<%= nameCap %>Controller} from './<%= name %>';
+
+describe('Component <%= nameCap %>', () => {
+    let vm: <%= nameCap %>Controller;
+
+    let $rootScope: ng.IRootScopeService;
+
+    beforeEach(() => {
+        angular.mock.module('EZ.Common');
+        angular.mock.module('EZ.<%= moduleCap %>');
+
+        inject(function(_$rootScope_: ng.IRootScopeService){
+           $rootScope = _$rootScope_;
+        });
+
+        vm = new <%= nameCap %>Controller();
+    });
+
+    describe('some block', () => {
+        it('some test', () => {
+
+
+            $rootScope.$digest();
+        });
+    });
+});

@@ -1,0 +1,9 @@
+{
+  "vendor": [
+    "jquery",
+    "angular",
+    "angular-ui-grid",
+    "semantic-ui-angular"
+  ],
+  "app": "./src/index.ts"
+}

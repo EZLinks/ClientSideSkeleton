@@ -1,0 +1,40 @@
+{
+  "name": "scaffold",
+  "description": "Scaffold.Template",
+  "authors": [
+    "EZLinks"
+  ],
+  "license": "none",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.7",
+    "angular-bootstrap": "2.0.2",
+    "angular-google-chart": "0.1.0",
+    "angular-ui-grid": "3.0.7",
+    "jquery": "2.1.4",
+    "moment": "2.13.0",
+    "moment-timezone": "0.5.0",
+    "angular-odata-resources": "1.0.22",
+    "odata-ui-grid": "*",
+    "semantic-ui": "^2.2.2",
+    "lodash": "4.14.2",
+    "semantic-ui-angular-jquery": "0.1.1"
+  },
+  "overrides": {
+    "semantic-ui": {
+      "main": [ "./dist/semantic.min.css", "./dist/semantic.min.js" ]
+    },
+    "semantic-ui-angular-jquery": {
+      "main": "angular-semantic-ui.min.js"
+    },
+    "moment-timezone": {
+      "main": "./builds/moment-timezone-with-data.min.js"
+    },
+    "lodash": {
+      "main": "./dist/lodash.min.js"
+    },
+    "angular-bootstrap": {
+      "main":  "ui-bootstrap.min.js"
+    }
+  }
+}

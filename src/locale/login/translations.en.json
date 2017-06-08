@@ -1,0 +1,6 @@
+{
+    "LOGIN_HEADER" : "ETN Login",
+    "LOGIN_BTN_NAME" : "Login",
+    "USER_NAME_REQUIRED_VALMSG" : "User name is required.",
+    "PASSWORD_REQUIRED_VALMSG" : "Password is required."
+}

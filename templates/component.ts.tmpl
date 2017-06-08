@@ -1,0 +1,37 @@
+
+export class <%= nameCap %> implements ng.IComponentOptions {
+    public templateUrl: string;
+    public controller: any;
+    public controllerAs: string;
+    public bindings: any;
+
+    constructor() {
+        this.templateUrl = require('ngtemplate!./<%= name %>.html');
+        this.controller = <%= nameCap %>Controller;
+        this.controllerAs = '<%= controllerAs %>';
+        this.bindings = {
+
+        };
+    }
+}
+
+export class <%= nameCap %>Controller {
+
+    //#region Properties
+
+    //#endregion
+
+    //#region Constructor
+
+    static $inject = [];
+
+    constructor() {
+
+    }
+
+    //#endregion
+
+    //#region Functions
+
+    //#endregion
+}
